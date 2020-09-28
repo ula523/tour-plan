@@ -1294,6 +1294,43 @@ template {
   color: #E0E0E0;
 }
 
+.footer-policy {
+  margin-top: 95px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 700px 1fr 1fr 1fr;
+      grid-template-columns: 700px 1fr 1fr 1fr;
+}
+
+.footer-policy__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer-policy__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  list-style: none;
+  margin-left: 12px;
+}
+
+.footer-policy__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-policy__icon {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  text-align: right;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
