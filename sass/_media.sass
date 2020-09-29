@@ -8,6 +8,7 @@
         width: 100%
         height: 100%
         object-fit: cover
+
   .card
     width: 230px
     height: 230px
@@ -88,15 +89,57 @@
       &-form
         grid-column: span 5
         grid-row: 4
-    
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(2, 1fr)
+      column-gap: 10px
+      row-gap: 10px
+    &__block
+      grid-column: span 1
+ 
 
 @media ( max-width: 768px )
   .container
     max-width: 576px
     width: 92%
+  body
+    padding-top: 78px
   .navbar
-    &__search, &-menu, &__user
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__user, &__search
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      padding-top: 30px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &_visible
+            display: block
+
+      
     &-top
   .menu
     &-button
@@ -114,6 +157,12 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .stars
     flex-basis: 50%
     text-align: right
@@ -178,6 +227,7 @@
   .footer
     &__input
       flex-basis: 100%
+
 
 @media  ( max-width: 576px )
   .logo
