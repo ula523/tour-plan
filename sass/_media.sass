@@ -14,10 +14,11 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 
 @media  ( max-width: 992px )
-  .container, 
+  .container,
   .newsletter-wrapper
     max-width: 700px
   .logo
@@ -30,7 +31,7 @@
       padding-top: 22px
       padding-bottom: 22px
       &__link
-        font-size 12px
+        font-size: 12px
         line-height: 15px
   .search
     &__input
@@ -57,7 +58,7 @@
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
-    
+
   .card
     width: 340px
     height: 250px
@@ -66,7 +67,8 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px //Отступ
     &__input
-      flex-basis: 49%
+      &-group
+        flex-basis: 48%
     &__logo
       grid-row: 1/2
       grid-column: span 2
@@ -96,7 +98,6 @@
       row-gap: 10px
     &__block
       grid-column: span 1
- 
 
 @media ( max-width: 768px )
   .container
@@ -139,7 +140,6 @@
           &_visible
             display: block
 
-      
     &-top
   .menu
     &-button
@@ -184,7 +184,7 @@
       &__offer
         order: -1
         margin-left: 0
-  
+
   .hotel
     &-right
       flex-direction: column
@@ -211,7 +211,7 @@
         top: 32px
         &--prev
           left: 50% //сдвиг от левого края родителя
-          margin-left: -65px 
+          margin-left: -65px
           transform: translate(-50%, 0) //отцентрировать кнопку
         &--next
           right: 50%
@@ -226,8 +226,8 @@
     height: 255px
   .footer
     &__input
-      flex-basis: 100%
-
+      &-group
+        flex-basis: 100%
 
 @media  ( max-width: 576px )
   .logo
@@ -247,6 +247,8 @@
         font-size: 30px
         line-height: 38px
         margin-bottom: 37px
+  .subscribe
+    max-width: 100%
 
   .card
     width: 100%
@@ -268,25 +270,25 @@
       grid-column: 1
     &__legal
       grid-row: 5
-      grid-colum: 1
+      grid-column: 1
     &__contact
       &-details
         grid-row: 6
         grid-column: 1
       &-form
         grid-row: 7
-        grid-colum: 1
-    
-    
+        grid-column: 1
+
 @media  ( max-width: 320px )
-  .container
-    max-width: 280px
   .hotel
-    &__slider
-      margin-button: 20px
-
-  
-        
-
-  
-  
+    padding-bottom: 40px
+  .reviews
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+    &-slider
+      &__text
+        font-size: 12px
+        line-height: 160%
